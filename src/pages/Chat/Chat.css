@@ -1,0 +1,35 @@
+.chat{
+    /* background-color: rgb(76, 35, 54); */
+    background-color: #A7D3C8;
+    /* background-color: red; */
+    display: grid;
+     /* justify-content: center; */
+    /* align-items: center;  */
+    place-items: center;
+    min-height: 100vh;
+    overflow:hidden;
+
+}
+.main-container{
+    /* background-color: rgb(255, 8, 8); */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* justify-content: space-around; */
+    /* gap: 3px; */
+    width: 80%;
+    height: 85vh;
+    /* border:2px solid black; */
+
+
+}
+
+@media (max-width:450px) {
+    .main-container{
+        display: flex;
+    }
+    .main-container{
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+}

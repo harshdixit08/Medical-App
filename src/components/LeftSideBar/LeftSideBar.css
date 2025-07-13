@@ -1,0 +1,140 @@
+.ls{
+    border: 1px solid #0F6156;
+    /* background-color: rgb(220, 216, 135); */
+    background-color: #EAEDEB;
+    /* overflow: scroll; */
+    height: 85vh;
+    background-image: url('../../assets/whatsbg.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.ls-top{
+    padding: 20px;
+    background-color: #0F6156;
+}
+.ls-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ls-nav .logo{
+    width: 140px ;
+}
+.ls-nav .menu img{
+    max-height:20px ;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.menu{
+    position: relative;
+    /* background-color: brown; */
+}
+.menu .sub-menu{
+    background-color: #EAEDEB;
+    position: absolute;
+    right:0;
+    /* left: 100; */
+    bottom: 20;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90px;
+    display: none;
+    color: white;
+    /* box-shadow: 0px 2px 3px 1px rgb(130, 233, 119); */
+}
+.sub-menu p{
+    font-size: 13px;
+    cursor: pointer;
+    padding: 5px;
+    color:#0F6156;
+}
+.sub-menu hr{
+    color: blueviolet;
+}
+.menu:hover .sub-menu{
+    display: block;
+}
+.ls-search{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border-radius: 30px;
+    max-width: fit-content;
+}
+
+.ls-search img{
+    width: 17px;
+}
+.ls-search input{
+    border: none;
+    text-align: center;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+    font-size:15px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.ls-search input::placeholder{
+    color: rgb(255, 249, 249);
+}
+.ls-list{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 70%;
+    /* background-color: rgb(167, 144, 144); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.profile-img{
+    width:50px ;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+}
+
+.ls-list .friends{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.1s;
+    /* color: white; */
+ 
+}
+.friends:hover{
+    transform:scale(1.03);
+}
+.friends:hover{
+    background-color:#EAEDEB;
+}
+.friends .name-lastmsg{
+    display: flex;
+    flex-direction: column;
+}
+.name-lastmsg span{
+    font-size: 12px;
+}
+.friends:hover span{
+    color: #0F6156;
+}
+.friends.border img{
+    border: 3px solid green;
+}
+.friends.border div span{
+    color: green;
+}
+
+@media (max-width:450px) {
+    .ls{
+        width: 100%;
+        min-height: 100vh;
+    }
+}

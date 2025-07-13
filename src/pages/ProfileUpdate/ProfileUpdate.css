@@ -1,0 +1,95 @@
+
+.profile{
+    height: 100vh;
+    /* background-color: bisque; */
+    background-color:  #0F6156;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.profile-container{
+    /* background-color: antiquewhite; */
+    background-color: #EAEDEB;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width:700px;
+    border-radius: 10px;
+}
+.profile-pic{
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+    /* background-color: aqua; */
+}
+.profile form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: aqua; */
+}
+.profile form h3{
+    font-weight: 600;
+    text-align: center;
+    color: #0F6156;
+    flex: 1;
+   
+}
+.head-arrow{
+    display: flex;
+  
+}
+.arrow{
+    width: 19px; 
+    background-color:#EAEDEB;
+    cursor: pointer;
+}
+.profile-container label{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px; 
+}
+form label img{
+    aspect-ratio: 1/1;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.h4{
+    color: #0F6156;
+}
+.profile-container form input,textarea{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #c9c9c9;
+    outline-color: #0F6156;
+}
+.profile-container form button{
+    border: none;
+    background-color:#0F6156;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media  (max-width:450px) {
+    .profile-container{
+        /* background-color: antiquewhite; */
+        background-color: #EAEDEB;
+        display: flex;
+        /* justify-content: space-between;
+        align-items:center; */
+        flex-direction: column;
+        width:90vw;
+        /* background-color: black; */
+        border-radius: 10px;
+    }
+    
+}

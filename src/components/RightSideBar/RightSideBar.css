@@ -1,0 +1,89 @@
+.rightside{
+    background-color: #EAEDEB;
+    border: 1px solid #0F6156;
+    background-image: url('../../assets/whatsbg.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+.right-profile{
+    padding-top: 60px;
+    text-align: center;
+    max-width:70%;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+.right-profile .dp{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 130px;
+    cursor: pointer;
+}
+.right-profile h3{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px 0px 10px;
+}
+.grn-dot{
+    aspect-ratio: 1/1;
+    width: 12px;
+}
+.right-profile .abt-para{
+    font-size: 12px;
+    opacity: 100%;
+    font-weight: 400;
+}
+.rightside hr{
+    border-color: rgb(234, 198, 21);
+    margin: 15px 10px 10px 10px;
+}
+.right-media{
+    padding: 0px 15px 10px;
+    font-size: 15px;
+    /* background-color: aqua; */
+}
+.right-sub{
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-evenly; */
+    gap: 5px;
+    /* background-color: aqua; */
+    margin-top: 8px;
+    max-height: 220px;
+}
+.imgs{
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logout-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0F6156;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    border-radius: 20px;
+    padding: 10px 65px;
+    color: white;
+}
+
+
+@media (max-width:450px) {
+    .rightside{
+        display: none;
+    }
+}
